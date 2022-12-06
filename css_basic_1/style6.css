@@ -1,0 +1,41 @@
+#titulo {
+    color: rgb(14, 185, 128);
+}
+
+strong {
+    color: red;
+}
+
+.destacado {
+    color: orange;
+}
+
+#subtitulo {
+    color: blue;
+}
+
+p a {
+    color: red;
+    text-decoration: underline;
+}
+
+p em {
+    color: blue;
+}
+
+#adicional {
+    color: green;
+}
+
+#adicional a{
+    text-decoration: underline;
+    color: green;
+}
+
+#especial {
+    color: rgb(201, 70, 179);
+}
+
+#subtitulo.especial {
+    color: indigo;
+}

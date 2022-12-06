@@ -1,0 +1,53 @@
+.f1 {
+    font-family: Georgia;
+    font-style: italic;
+    color: orange;
+}
+
+.f2 {
+    text-decoration-line: overline;
+    text-transform: uppercase;
+}
+
+.f3:first-letter {
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-weight: bold;    
+}
+
+.f4 {
+    color: blue;
+    background-color: rgb(233, 233, 98);
+    padding: 5mm;
+    font-weight: 900;
+}
+
+.f5 {
+    line-height : 2em;
+    text-align: right;
+    font-weight: 150px;
+}
+
+.f6 {
+    word-spacing: 3em;
+    letter-spacing: 1em;
+}
+
+/*
+La classe f1 especifica una font de la família Georgia, d'estil cursiva i de color taronja. 
+
+▪ La classe f2 especifica una font amb decoració de sobreimpressió i que sempre ha d'aparèixer en 
+majúscules. 
+
+▪ La classe f3 especifica una font subratllada i negreta, on la primera lletra de cada paraula ha 
+d'aparèixer en majúscules. 
+▪  Modifica  l'estil  anterior  (f3),  eliminant  la  propietat  adequada  i  afegint  el  pseudo-element:  first-letter, per especificar una font subratllada i negreta, on la primera lletra del text (i no de cada paraula) ha d'aparèixer en majúscules. 
+
+▪ La classe f4 en què el text ha d'aparèixer de color blau, amb un color de fons groc, i una separació 
+entre el text i el color de fons de 5 mil·límetres. A més el text ha d'aparèixer amb el màxim gruix 
+possible (més que un text de tipus negreta). 
+
+▪ La classe f5 en què el text ha d'aparèixer amb un interlineat d'2em, i alineat a la dreta. Provar-ho 
+en  un  paràgraf  de  150px  per  apreciar  així  l'interlineat,  sense  necessitat  d'escriure  molt  text  per provocar el salt de línia. 
+
+▪ La classe f6 amb un espaiat entre lletres d'1em i un espaiat entre paraules de 3 em. 

@@ -1,0 +1,73 @@
+span {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 4px;
+}
+
+* {
+    text-transform: capitalize;
+}
+
+.gran {
+    font-size: 25px;
+}
+
+.mitja {
+    font-size: 15px;
+}
+
+.petit {
+    font-size: 10px;
+}
+
+#header {
+    background: #0370cf;
+    color: white;
+    padding: 15px 13px 12px; /* A dintre */
+    margin: 20px; /* A fora */
+    margin-bottom: 53px;
+    border-radius: 20px 40px;
+}
+
+h2,h3 {
+    text-transform: uppercase;
+}
+
+#header ul {
+    list-style: square;
+}
+
+#header li a.link.pepito {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 23px;
+}
+
+a {
+    text-transform: capitalize;
+    color: rgb(187, 36, 111);
+    text-decoration: none;
+}
+
+#header li a.link.pepito.juan {
+    text-transform: uppercase;
+    color: rgb(208, 241, 21);
+    text-decoration: none;
+}
+
+ul > li a {
+    color: rgb(179, 79, 89);
+    text-decoration: none;
+}
+
+#header li a.link:hover {
+    color:rgb(18, 223, 189)
+}
+
+#lista ul_li_p {
+    color: red;
+}

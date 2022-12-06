@@ -1,0 +1,35 @@
+.plata {
+    color: orange;
+    font-size: 30px;
+}
+
+#nav h1, h2 {
+    color: orange;
+    font-size: 30px;
+}
+
+.palgo .algo {
+    color: orange;
+    font-size: 30px;
+}
+
+#gran {
+    font-size: 60px;
+}
+
+#petit {
+    font-size: 10px;
+}
+
+#destacat {
+    color: red;
+}
+
+#my_color {
+    color: aquamarine;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

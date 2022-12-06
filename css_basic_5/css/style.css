@@ -1,0 +1,275 @@
+/*
+GENERICS
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: #20c2af;
+
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+section {
+    padding: 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 23px;
+    z-index: 100;
+
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -o-transition: all .7s ease;
+}
+
+header nav ul li{
+    float: left;
+    margin-right: 50px;
+    color: white;
+    font-size: 15px;
+    line-height: 18px;  
+    transition: none;
+}
+
+body.seccio1 header {
+    background-color: #002c72;
+}
+
+body.seccio1 .naviga ul li a {
+    color: white;
+}
+
+body.seccio0 {
+    background-color: #026ecc;
+}
+
+body.seccio1 {
+    background-color: rgb(62, 219, 62);
+}
+
+body.seccio1 .wrap2 {
+    background-color: rgb(0, 114, 0);
+}
+
+body.seccio2 header {
+    background-color: #be511e;
+}
+
+body.seccio2 {
+    background-color: rgb(133, 126, 27);
+}
+
+body.seccio2 .wrap3 {
+    background-color: rgb(192, 183, 54);
+}
+
+body.seccio3 header {
+    background-color: #7b40c9;
+}
+body.seccio3 {
+    background-color: rgb(54, 192, 128);
+}
+
+body.seccio3 .wrap4 {
+    background-color: rgb(65, 201, 198);
+}
+
+
+/*
+CLASE
+*/
+.logo {
+    float: left;
+    width: 200px;
+    margin: 7px 50px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.naviga{
+    float: right;
+    margin-right: 50px;
+}
+
+.logo-rp {
+    width: 50px;
+    height: 50px;
+}
+
+.wrap1 {
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 60px;
+    background-color: #ddd;
+    padding: 46px;
+    border-radius: 23px;
+    min-height: 350px;
+    min-width: 700px;
+    border: 2px solid yellow;
+}
+
+.wrap2 {
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 60px;
+    background-color: rgb(80, 197, 119);
+    min-height: 350px;
+    min-width: 700px;
+    padding: 46px;
+}
+
+.wrap3 {
+    background-color: rgb(188, 223, 93);
+}
+
+.wrap4 {
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 60px;
+    background-color: rgb(221, 187, 74);
+    border-radius: 23px;
+    min-height: 350px;
+    min-width: 700px;
+}
+
+.imgburger {
+    float: right;
+}
+
+.menuh2 {
+    border-bottom: red solid 5px;
+}
+
+
+/*
+IDENTIFICADORS
+*/
+#section-1.full-height {
+    height: 150vh;
+}
+
+#menu {
+    float: left;
+    margin: 0 auto;
+    width: 60px;
+    background-color: #ddd;
+    padding: 40px;
+    border-radius: 23px;
+    min-height: 100px;
+    min-width: 100px;
+    position: relative;
+    bottom: 520px;
+    border: 2px solid yellow;
+    margin-left: -65px;
+}
+
+#blackline {
+    background-color: black;
+    width: 800px;
+    margin: 0 auto;
+    color: white;
+    text-align-last: right;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#blackline .blacklinep {
+    margin-right: 15px;
+    font-weight: 1000;
+}
+
+#cabecera {
+    background-color: rgb(49, 245, 186);
+
+}
+
+#contenido {
+    background-color: rgb(236, 213, 213);
+}
+
+#contenedor {
+    margin: 0 auto;
+    padding: 46px;
+
+}
+
+#cabecera {
+    background-color: rgb(49, 245, 186);
+    width: 800px;
+
+}
+
+#contenido {
+    background-color: rgb(236, 213, 213);
+    float: left;
+    width: 650px;
+}
+
+#menu2 {
+    float: left;
+    background-color: rgb(236, 213, 213);
+    width: 120px;
+    padding: 15px;
+    text-decoration: underline dotted;
+    height: 382px;
+}
+
+#pie {
+    clear: both;
+    background-color: rgb(49, 245, 186);
+    width: 800px;
+}
+
+
+#contenido2 {
+    background-color: rgb(236, 213, 213);
+    float: left;
+    width: 550px;
+    height: 412px;
+
+}
+
+#principal {
+    float: left;
+    font-size: small;
+}
+
+#secundario {
+    float: left;
+    background-color: rgb(236, 213, 213);
+    width: 100px;
+    height: 412px;
+    position: relative;
+    left: 550px;
+    bottom: 349px;
+}
+
+#menu3 {
+    float: left;
+    background-color: rgb(236, 213, 213);
+    width: 120px;
+    padding: 15px;
+    text-decoration: underline dotted;
+    height: 402px;
+}

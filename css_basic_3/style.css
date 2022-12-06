@@ -1,0 +1,24 @@
+ul {
+    list-style-image: url('img/check.png'); 
+}
+
+
+.musica {
+    list-style-image: url('img/musical-note.png'); 
+}
+
+.texto {
+    list-style-image: url('img/text-box.png'); 
+}
+
+.word {
+    list-style-image: url('img/word.png'); 
+}
+
+.pdf {
+    list-style-image: url('img/pdf.png'); 
+}
+
+.imagen {
+    list-style-image: url('img/picture.png'); 
+}

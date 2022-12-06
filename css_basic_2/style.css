@@ -1,0 +1,58 @@
+body {
+    font-size: 14pt;
+}
+
+.menys {
+    font-size: 0.878281258782816em;
+}
+
+.mes {
+    font-size: 1.46380209797136em;
+}
+
+.mes {
+    font-size: 10pt;
+}
+
+.dos {
+    font-size: 3.5mm;
+}
+
+.tres {
+    font-size: 0.35cm;
+}
+
+.quatre {
+    font-size: 12pt;
+}
+
+.cinc {
+    font-size: 1pc;
+}
+
+.sis {
+    font-size: 4.23mm;
+}
+
+.set {
+    font-size: 1in;
+}
+
+.vuit {
+    font-size: 2.54cm;
+}
+
+#c1 {
+    background: orange;
+    width: 300px;
+}
+#c2 {
+    background: red;
+    width: 300px;
+    padding: 50px;
+}
+#c3 {
+    background: aquamarine;
+    width: 400px;
+
+}

@@ -1,0 +1,6 @@
+p#aviso { color:blue; }
+p #aviso { color:red; }
+p, #aviso { color:orange; }
+
+
+

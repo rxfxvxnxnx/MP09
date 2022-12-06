@@ -1,0 +1,351 @@
+p.ex19p {
+    border: 1px solid black;
+}
+
+a {
+    border: 3px dotted red;
+    text-decoration: none;
+    color: black;
+}
+
+.ex20 {
+    margin: 10px;
+}
+
+a.ex21 {
+    margin: 5px;
+}
+
+a.ex21a2 {
+    position: relative;
+    top: 15px;
+    left: 45px;
+}
+
+
+a.ex21a1 {
+    position: relative;
+    top: 75px;
+}
+
+.ex22h32 {
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+}
+
+div{
+    border: 3px solid blue;
+    min-block-size: 0pt;
+    width: 300px;
+    padding: 10px;
+}
+
+.ex24a {
+    position: absolute;
+    top: 60px;
+}
+
+.ex24a3 {
+    position: relative;
+    top: 60px;
+}
+
+.ex24p, .ex24p3 {
+    border: 1px solid black;
+}
+
+.ex24p3 {
+    position: absolute;
+    top: 10px;
+}
+
+.ex243 {
+    position: relative;
+    height: 100px;
+}
+
+.ex25p1 {
+    border: 2.5px solid blue;
+    margin: 0px;
+    width: 100px;
+}
+.ex25p2 {
+    border: 5px solid orange;
+    width: 100px;
+    margin: 0px;
+}
+.ex25p3 {
+    border: 8px solid red;
+    margin: 0px;
+    width: 100px;
+}
+
+.ex25p1d {
+    border: 2.5px solid blue;
+    margin: 0px;
+    width: 100px;
+    float: right;
+}
+
+.ex25p1i {
+    border: 2.5px solid blue;
+    margin: 0px;
+    float: left;
+    width: 100px;
+}
+
+.ex26 {
+    border: 1px dashed black;
+    width: 350px;
+    height: 100px;
+}
+
+.ex262 {
+    border: 5px dashed black;
+    width: 250px;
+    height: 100px;
+}
+
+.ex26 p {
+    float: right;
+}
+
+.ex262 p {
+    float: right;
+}
+
+.ex27 {
+    border: 1px dashed black;
+    width: 350px;
+    height: 100px;
+    float: left;
+}
+
+.ex272 {
+    border: 5px dashed black;
+    width: 250px;
+    height: 100px;
+    float: right;
+}
+
+.ex27 p {
+    float: right;
+}
+
+.ex272 p {
+    float: right;
+}
+
+.ex28, .ex282{
+    border: transparent;
+    width: 350px;
+    height: 100px;
+    float: left;
+}
+
+.ex28 p {
+    float: right;
+}
+
+.ex291 {
+    margin: 3px;
+    border: 3px solid red;
+    width: 70px;
+}
+
+.ex292 {
+    margin: 3px;
+    border: 3px solid green;
+    
+}
+
+.ex293 {
+    border: 3px solid blue;
+    margin: 3px;
+    
+}
+
+.ex29i {
+    border: transparent;
+}
+
+.ex29i .ex291 {
+    float: left;
+}
+
+.ex29i2 {
+    border: transparent;
+}
+
+.ex29i2 .ex291 {
+    float: left;
+}
+
+.ex29i2 .ex293 {
+    clear: left;
+}
+
+.ex30 {
+    content: "";
+    display: block;
+    /* clear: both; */
+    background-color: rgb(160, 158, 158);
+    border-color: white;
+}
+
+.ex30p1 {
+    position:relative;
+    float: left;
+}
+
+.ex30p2 {
+    position:relative;
+    float: right;
+}
+
+.ex302 {
+    content: "";
+    display: block;
+    clear: both;
+    background-color: rgb(160, 158, 158);
+    border-color: white;
+}
+
+.ex3022{
+    clear: both;
+    border-color: transparent;
+}
+
+.ex31p1 {
+    border: 5px solid orange;
+    width: 100px;
+    margin: 0px;
+    position: relative;
+    float: left;
+    margin: 15px;
+}
+
+.ex31p2 {
+    border: 5px solid orange;
+    width: 100px;
+    margin: 0px;
+    position: relative;
+    float: left;
+    margin: 15px;
+}
+
+.ex31p3 {
+    border: 5px solid orange;
+    width: 100px;
+    margin: 0px;
+    position: relative;
+    float: left;
+    margin: 15px;
+
+}
+
+.ex31p4 {
+    border: 5px solid orange;
+    width: 100px;
+    margin: 0px;
+    position: relative;
+    float: left;
+    margin: 15px;
+}
+
+.ex31p5 {
+    border: 5px solid orange;
+    width: 100px;
+    margin: 0px;
+    position: relative;
+    float: left;
+    margin: 15px;
+}
+
+.ex31p6 {
+    border: 5px solid orange;
+    width: 100px;
+    margin: 0px;
+    position: relative;
+    float: left;
+    margin: 15px;
+}
+
+.ex31p52 {
+    border: 5px solid orange;
+    width: 100px;
+    position: relative;
+    float: left;
+    margin: 15px;
+    visibility: hidden;
+}
+
+.ex31p53 {
+    border: 5px solid orange;
+    width: 100px;
+    position: relative;
+    float: left;
+    margin: 15px;
+    display: none;
+}
+
+.ex31a {
+    border: none;
+    display: inline-block;
+}
+
+.ex31a2 {
+    border: none;
+}
+
+.ex31p7 {
+    border: 5px solid orange;
+    width: 100px;
+    margin: 15px;
+    display: inline;
+}
+
+.ex31a7 {
+    border: none;
+}
+
+.ex321 {
+    overflow: visible;
+    border-color: gray;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    float: left;
+    margin: 55px;
+}
+
+.ex322 {
+    overflow: hidden;
+    border-color: gray;
+    position: relative;
+    float: left;
+    margin: 55px;
+    height: 150px;
+    width: 150px;
+}
+
+.ex323 {
+    overflow: scroll;
+    border-color: gray;
+    position: relative;
+    float: left;
+    margin: 55px;
+    height: 150px;
+    width: 150px;
+}
+
+.ex324 {
+    overflow: auto;
+    border-color: gray;
+    position: relative;
+    float: left;
+    margin: 55px;
+    height: 150px;
+    width: 150px;
+}

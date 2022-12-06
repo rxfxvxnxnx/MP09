@@ -1,0 +1,58 @@
+/*Capa d'ID c1: Font de 10pt i color taronja. 
+■ Capa d'ID c2: Font de 14pt i color definit mitjançant codi hexadecimal, amb els següents valors: 
+vermell (47), verd (62) i blau (B0). 
+■ Capa d'ID c3: Font de 18pt i color vermell pur definit mitjançant codi decimal, amb els següents 
+valors absoluts: vermell (255), verd (0) i blau (0). 
+■ Capa d'ID c4: Font de 22pt i color blau pur definit mitjançant codi decimal, amb els següents 
+valors relatius percentuals: vermell (0%), verd (0%) i blau (100%).
+*/
+#c1 {
+    font-size: 10pt;
+    color: orange;
+}
+#c2 {
+    font-size: 14pt;
+    color: rgb(47, 62, 176)
+}
+#c3 {
+    font-size: 18pt;
+    color: rgb(255, 0, 0);
+}
+#c4 {
+    font-size: 22pt;
+    color: rgb(0%, 0%, 100%);
+}
+
+
+
+/*10. Per  entendre  el  model  de  caixes,  redefineix  els  estils  de  l'exercici  anterior,  afegint  les  següents 
+        característiques per a cada estil (atenció!, aquest cop estructura la pàgina sense aniuar les capes, és 
+        a dir, quan es tanca una comença la següent): </a><br>
+        ■ Capa d'ID c1: Vora de 2 mil·límetres d'estil sòlid de color negre. <br>
+        ■  Capa  d'ID  c2:  Vora  de  2  mil·límetres  d'estil  sòlid  de  color  vermell,  amb  un  farciment  de  4 
+        mil·límetres. <br>
+        ■ Capa d'ID c3: Color de fons blau, amb un marge de 4 mil·límetres. <br>
+        ■ Capa d'ID c4: Color de fons groc, amb un marge de 4 mil·límetres, un farciment també de 4 
+        mil·límetres i una vora de 2 mil·límetres d'estil puntejat de color negre.</p>
+        */
+p.solid {
+    border-style: solid;
+    border-width: 2mm;
+    border-color: red;
+}
+#c2.solid {
+    border-style: solid;
+    border-width: 2mm;
+    border-color: red;
+    padding: 4mm;
+}
+p.fons {
+    background: blue;
+    margin: 4mm;
+}
+p.punts {
+    border-style: dotted;
+    background: rgb(209, 209, 102);
+    padding: 4mm;
+    margin: 4mm;
+}

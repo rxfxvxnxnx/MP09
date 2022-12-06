@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Basic 4</h1>
+        <p>
+        19. HTML diferència dos tipus d'elements bàsics: <br>
+        • Elements de bloc, que comencen en una nova línia i ocupen tot l'espai disponible fins al final de 
+        la línia. Els principals elements de bloc són: blockquote, center, div, dl, form, h1, h2, h3, h4, h5, 
+        h6, hr, ol, p*, pre, table, ul. <br>
+        • Elements  de  línia,  que  només  ocupen  l'espai  necessari  per  a  mostrar  els  seus  continguts.  Els 
+        principals elements de línia són: a, em, font, i, img, input, label, select, span, strong, sub, sup, 
+        textarea, u. <br>
+        • Els elements de bloc només poden aparèixer dins d'altres elements de bloc, en canvi els elements 
+        de línia poden aparèixer dins d'elements de bloc i de línia. Per comprovar tot això, dissenya una 
+        pàgina com aquesta: 
+        </p>
+        <p class="ex19p">Parrafo 1: los parrafos son elementos de bloque</p>
+        <p class="ex19a"><a href="#">Un enlace</a> puede aparecer dentro de <a href="#">otro enlace</a></p>
+        <p class="ex19p">Parrafo 2: los parrafos son elementos de bloque</p>
+        <p>por defecto</p>
+        <h3>Header h3</h3>
+        <p>no puede aparecer al lado de</p>
+        <h3>otro Header h3</h3>
+
+        <p>20. Mitjançant  CSS  es  poden  establir  4  maneres  bàsiques  de  posicionar  els  elements  a  la  pàgina.  La 
+        primera és el posicionament estàtic, que és el model que utilitzen per defecte els navegadors (com es va 
+        veure  en  l'exercici  anterior),  i  on  la  distància  entre  els  elements  de  bloc  ve  determinada  pels  marges 
+        verticals, i la distància entre els elements de línia pels marges laterals. Redefineix els estils de l'exercici 
+        anterior, afegint marges de 10 píxels per a tots els elements, i confirma que queda de la següent manera: </p>
+
+        <p class="ex20">Parrafo 1: los parrafos son elementos de bloque</p>
+        <p class="ex20"><a href="#">Un enlace</a> puede aparecer dentro de <a href="#">otro enlace</a></p>
+        <p class="ex20">Parrafo 2: los parrafos son elementos de bloque</p>
+        <p>por defecto</p>
+        <h3 class="ex20">Header h3</h3>
+        <p>no puede aparecer al lado de</p>
+        <h3 class="ex20">otro Header h3</h3>
+
+
+        <p>21. El  posicionamient  relatiu  consisteix  en  posicionar  una  caixa  segons  el  posicionament  estàtic  o 
+        normal,  i  després  desplaçar-la  respecte  de  la  seva  posició  original.  El  desplaçament  de  la  caixa  es 
+        controla amb les propietats top, right, bottom i left. Per comprovar-ho, dissenya una pàgina com la de 
+        l'exemple, on inicialment es mostra els tres enllaços i el paràgraf mitjançant posicionament estàtic (per 
+        defecte), i a continuació, es mostra com l’enllaç 2 s'ha posicionat de manera relativa, col·locant-lo a 15 
+        píxels de seva posició superior (top) original, i a 45 píxels de la seva posició esquerra (left) original:</p>
+
+        <a href="#" class="ex21">Enlace 1</a>
+        <a href="#" class="ex21">Enlace 2</a>
+        <a href="#" class="ex21">Enlace 3</a>
+        <p class="ex19p">Así quedaria mediante posicionamiento estatico</p>
+
+        <a href="#" class="ex21a">Enlace 1</a>
+        <a href="#" class="ex21a2">Enlace 2</a>
+        <a href="#" class="ex21a3">Enlace 3</a>
+        <p class="ex19p">El enlace 2 tiene un posicionamiento relativo</p>
+
+        <p>22. També  és  important  tenir  en  compte  que  el  posicionament  relatiu  no  influeix  sobre  la  resta 
+        d'elements, així per exemple, si per a l'exercici anterior es decideix posicionar de manera relativa l’enllaç 
+        1,  col·locant-75  píxels  per  sota  de  la  seva  posició  original,  això  no  influeix  sobre  la  resta  d'elements 
+        (enllaços i paràgrafs), que segueixen ocupant la seva posició normal o estàtica (prova-ho): </p>
+
+
+        <a href="#" class="ex21a1">Enlace 1</a>
+        <a href="#" class="ex21a">Enlace 2</a>
+        <a href="#" class="ex21a3">Enlace 3</a>
+        <p class="ex19p">Asi quedaria el posicionamiento estatico</p>
+
+        <br>
+
+        <p> I amb aquest posicionament ja pots dissenyar la següent pàgina, on apareix un Header al costat d'un altre, 
+            encara que els dos siguin elements de bloc:</p>
+
+            <h3 class="ex22h3">Header 3</h3>
+            <h3 class="ex22h32">otro Header 3</h3>
+
+        <p> 24. En el posicionament absolut, per establir quin és l'origen de coordenades d'un element, el navegador 
+            es  queda  amb  el  primer  element  contenidor  començant  pel  més  proper,  tal  que  estigui  posicionat  de 
+            qualsevol forma diferent a la estàtica. Anem a comprovar-ho mitjançant un exemple, on primer es mostra 
+            una capa (sense indicar res respecte al seu posicionament, per tant amb posicionament estàtic), que conté 
+            un enllaç 1 i tot seguit un paràgraf. Posteriorment, es torna a mostrar la capa, però aquesta vegada l'enllaç 
+            2  es  posiciona  de  manera  absoluta  amb  propietats  top  =  60px.  Què  succeeix?  Finalment,  a  la  tercera 
+            capa, canvia les seves propietats, afegint posicionament relatiu, sense indicar cap valor.  I afegint dins 
+            aquesta tercera capa, també un enllaç 3 posicionat de manera absoluta amb propietats top = 60px. Què 
+            succeeix? Comprova que la pàgina queda així pels 3 casos:</p>
+
+            <div class="ex24">
+                <p><a href="#">Enlace 1</a></p>
+                <p class="ex24p">CASO 1: posicionamiento estatico</p>
+                <p><a href="#">Enlace 2</a></p>
+            </div>
+
+            <br>
+
+            <div class="ex24">
+                
+                <p class="ex24p">CASO 2: posicionamiento estatico y enlace 2 con posicionamiento absoluto</p>
+                <p><a class="ex24a" href="#">Enlace 2</a></p>
+            </div>
+
+            <br>
+
+            <div class="ex243">
+                <p><a class="ex24a3" href="#">Enlace 3</a></p>
+                <p class="ex24p3">CASO 3: capa con posicionamiento relativo y enlace 3 con posicionamiento absoluto</p>
+                
+            </div>
+
+        <p>
+            25. L'últim mètode per posicionar els elements, denominat posicionament flotant, consisteix a desplaçar 
+            un element fins a la zona més a l'esquerra o més a la dreta possible, respecte a la seva posició original. 
+            Els elements en línia fan lloc als elements flotants, i els elements de bloc adapten el seu contingut. Per 
+            entendre  això,  vegem  el  següent  exemple,  en  el  qual  apareixen  3  capes  amb  vores  de  2,5  i  8  píxels 
+            respectivament i colors blau, taronja i vermell. Totes les capes tenen un ample de 100 píxels. En el primer 
+            cas apareixen totes amb posicionament normal o estàtic, en el segon cas la capa 1 flota cap a la dreta, i 
+            en el tercer cas la capa 1 flota cap a l'esquerra (la capa 2 adapta el seu contingut). Prova-ho: 
+        </p>
+
+        <p>POSICIONAMIENTO ESTÁTICO</p>
+        <p class="ex25p1">Capa 1</p>
+        <p class="ex25p2">Capa 2</p>
+        <p class="ex25p3">Capa 3</p>
+        <p>CAPA 1: FLOTA A LA DERECHA</p>
+        <p class="ex25p1d">Capa 1</p>
+        <p class="ex25p2">Capa 2</p>
+        <p class="ex25p3">Capa 3</p>
+        <p>CAPA 1: FLOTA A LA IZQUIERDA</p>
+        <p class="ex25p1i">Capa 1</p>
+        <p class="ex25p2">Capa 2</p>
+        <p class="ex25p3">Capa 3</p>
+
+        <p>
+            26. En  el  posicionament  flotant,  al  posicionar  un  element,  si  no  hi  ha  lloc  a  la  línia  actual,  l'element 
+            baixa  a  la  línia  inferior,  fins  que  trobi  el  lloc  necessari  per  mostrar-se  el  més  a  la  dreta  o  a  l'esquerra 
+            possible en la nova línia. Per veure això, dissenya una pàgina com la que es mostra a continuació, on les 
+            3 capes de l'exercici anterior, es posicionen de manera flotant cap a l'esquerra, i apareixen primer dins 
+            d'una capa de 350px d'ample per 100 d'alt, i després , dins d'una capa de 250px d'ample per 100 d'alt, on 
+            s'aprecia que com no hi caben les 3 capes en una mateixa línia, la tercera capa baixa a la següent línia: 
+        </p>
+
+        <div class="ex26">
+            <p class="ex25p1">Capa 1</p>
+            <p class="ex25p2">Capa 2</p>
+            <p class="ex25p3">Capa 3</p>
+        </div>
+            <br>
+        <div class="ex262">
+            <p class="ex25p1">Capa 1</p>
+            <p class="ex25p2">Capa 2</p>
+            <p class="ex25p3">Capa 3</p>
+        </div>
+
+        <p>
+            27. Modifica  l'exercici  anterior,  perquè  ara  apareguin  en  una  pàgina  web  (sense  marges),  una  capa  a 
+            l'esquerra i l'altra a la dreta, com es mostra a continuació:
+        </p>
+
+        <div class="ex27">
+            <p class="ex25p1">Capa 1</p>
+            <p class="ex25p2">Capa 2</p>
+            <p class="ex25p3">Capa 3</p>
+        </div>
+        <br>
+        <div class="ex272">
+            <p class="ex25p1">Capa 1</p>
+            <p class="ex25p2">Capa 2</p>
+            <p class="ex25p3">Capa 3</p>
+        </div>
+
+        <br><br><br><br><br><br>
+
+        <p>
+            28. Torna a modificar l'exercici anterior per obtenir ara el següent disseny:
+        </p>
+
+        <div class="ex28">
+            <p class="ex25p1">Capa 1</p>
+            <p class="ex25p2">Capa 2</p>
+            <p class="ex25p3">Capa 3</p>
+        </div>
+            <br>
+        <div class="ex282">
+            <p class="ex25p1">Capa 1</p>
+            <p class="ex25p2">Capa 2</p>
+            <p class="ex25p3">Capa 3</p>
+        </div>
+
+        <br><br><br><br><br><br> 
+
+        <p>
+            29. Quan s'utilitza el posicionament flotant, de vegades interessa fer  net, per a això hi ha la propietat 
+            clear (esborrar), que permet modificar el comportament per defecte, per forçar un element a mostrar-se 
+            per sota de qualsevol element flotant. La propietat admet 3 valors: 
+            • clear:  left  (esborrar  esquerra):  L'element  es  desplaça  de  forma  descendent  fins  que  pugui 
+            col·locar-se en una línia en la qual no hi hagi cap element flotant a la banda esquerra. 
+            • clear: right (esborrar dreta): El mateix però per a elements flotants al costat dret. 
+            • clear: both (esborrar tots dos): Es col·loca en una línia en la qual no hi hagi elements flotants ni 
+            a la banda esquerra ni a dreta. 
+            Per posar a prova això, dissenya una pàgina amb 3 capes amb posicionament per defecte:
+        </p>
+
+        <div class="ex291">
+            Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="ex292">
+            Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="ex293">
+            Lorem ipsum dolor sit amet.
+        </div>
+
+        <p>
+            A continuació, posiciona la CAPA 1 per tal que floti a l’esquerra: 
+        </p>
+
+        <div class="ex29i">
+            <div class="ex291">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+            <div class="ex292">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+            <div class="ex293">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+
+        <p>
+            Finalment, utilitza la propietat clear:left sobre la CAPA 3, per tal que aparegui a sota de la CAPA 1 
+        </p>
+
+        <div class="ex29i2">
+            <div class="ex291">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+            <div class="ex292">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+            <div class="ex293">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+
+        <p>30. Un altre exemple interessant de posicionament flotant en què cal fer servir la propietat clear, és per 
+            dissenyar una estructura de paginació, que permet anar endavant i enrere .Per fer-ho, dissenya una pàgina 
+            que inclogui una capa contenidora de color de fons gris, que no especifica ni ample ni alt, aquesta capa 
+            conté  dos  elements  posicionats  a  la  banda  esquerra  i  dreta  respectivament  (es  pot  utilitzar  l'etiqueta 
+            span per aplicar l'estil). Com veus, el text dels span sobresurt de la capa (sense width ni height) :
+        </p>
+
+        <div class="ex30">
+            <p class="ex30p1">Anterior</p>
+            <p class="ex30p2">Siguiente</p>
+        </div>
+        <br><br>
+        <div class="ex30">
+            <p class="ex30p1">Anterior</p>
+            <p class="ex30p2">Siguiente</p>
+            <br><br>
+        </div>
+        <div class="ex30">
+            <p class="ex30p1">Anterior</p>
+            <p class="ex30p2">Siguiente</p>
+            <div class="ex3022">
+            </div>
+        </div>
+
+        <p>
+            31. La propietat CSS visibilitat (visibility), si és oculta, no mostra els continguts de l'element, tot i que 
+            si reserva l'espai ocupat per aquest element. Per  exemple, dissenya la següent pàgina amb les 6 capes 
+            posicionades de la següent manera:
+        </p>
+
+        <p class="ex31p1">Capa 1</p>
+        <p class="ex31p2">Capa 2</p>
+        <p class="ex31p3">Capa 3</p>
+        <br><br><br><br>
+        <p class="ex31p4">Capa 4</p>
+        <p class="ex31p5">Capa 5</p>
+        <p class="ex31p6">Capa 6</p>
+
+        <br><br><br><br><hr>
+
+        <p class="ex31p1">Capa 1</p>
+        <p class="ex31p2">Capa 2</p>
+        <p class="ex31p3">Capa 3</p>
+        <br><br><br><br>
+        <p class="ex31p4">Capa 4</p>
+        <p class="ex31p52">Capa 5</p>
+        <p class="ex31p6">Capa 6</p>
+
+        <br><br><br><br><hr>
+
+        <p class="ex31p1">Capa 1</p>
+        <p class="ex31p2">Capa 2</p>
+        <p class="ex31p3">Capa 3</p>
+        <br><br><br><br>
+        <p class="ex31p4">Capa 4</p>
+        <p class="ex31p53">Capa 5</p>
+        <p class="ex31p6">Capa 6</p>
+
+        <br><br><br><br><hr>
+
+        <p class="ex31p1">Capa 1</p>
+        <p class="ex31p2">Capa 2</p>
+        <p class="ex31p3">Capa 3</p>
+        <br><br><br><br>
+        <p class="ex31p4">Capa 4</p>
+        <p class="ex31p5">Capa 5</p>
+        <p class="ex31p6">Capa 6</p>
+
+        <br><br><br><br>
+
+        <a href="#" class="ex31a">Enlace 1</a>
+        <a href="#" class="ex31a">Enlace 2</a>
+
+        <br><br><br><br><hr>
+
+        <p class="ex31p1">Capa 1</p>
+        <p class="ex31p2">Capa 2</p>
+        <p class="ex31p3">Capa 3</p>
+        <br><br><br><br>
+        <p class="ex31p4">Capa 4</p>
+        <p class="ex31p5">Capa 5</p>
+        <p class="ex31p6">Capa 6</p>
+
+        <br><br><br><br>
+
+        <a href="#" class="ex31a2">Enlace 1</a>
+        <br>
+        <a href="#" class="ex31a2">Enlace 2</a>
+
+        <br><br><br><br><hr>
+        
+
+        <p class="ex31p7">Capa 7</p>
+        <a href="#" class="ex31a7">Enlace 7</a>
+
+        <br><br><br><br>
+        
+        <p>
+            32. Normalment els continguts d'un element es poden mostrar en l'espai reservat per a aquest element. 
+            Però en ocasions el contingut d'un element no cap en l'espai reservat per a aquest element i es desborda. 
+            La propietat overflow (desbordament) permet controlar aquestes situacions, i admet 4 valors possibles:
+        </p>
+
+        <div class="ex321">
+            <h2>overflow:visible</h2>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        </div>
+
+        <div class="ex322">
+            <h2>overflow:hidden</h2>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam voluptate dolorem quos quod delectus quidem accusamus iure! Ratione, deleniti vel!
+        </div>
+
+        <div class="ex323">
+            <h2>overflow:scroll</h2>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam voluptate dolorem quos quod delectus quidem accusamus iure! Ratione, deleniti vel!
+        </div>
+
+        <div class="ex324">
+            <h2>overflow:auto</h2>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam voluptate dolorem quos quod delectus quidem accusamus iure! Ratione, deleniti vel!
+        </div>
+
+</body>
+</html>

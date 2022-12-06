@@ -1,0 +1,42 @@
+header {
+    padding: 5px;
+    background: pink;
+    text-transform: uppercase;
+}
+
+footer {
+    background: pink;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+h2 {
+    background: rgb(240, 122, 142);
+    border-style: solid;
+    width: min-content;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.t1 {
+    border-style: solid;
+    border-color: blue;
+}
+
+.t2 {
+    border-style: solid;
+    border-bottom-color: green;
+    border-top-color: red;
+    border-right-color: blue;
+    border-left-color: orange;
+}
+
+.t3 {
+    border-bottom-color: red;
+    border-style: solid;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+}
