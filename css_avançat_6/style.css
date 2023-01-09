@@ -1,0 +1,42 @@
+.row .col-9 {
+    background-color: rgb(77, 127, 219);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    text-align: center;
+}
+.row .col-3 {
+    background-color: rgb(217, 220, 20);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    text-align: center;
+}
+.col-sm-3 {
+    background-color: rgb(217, 220, 20);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    text-align: center;
+}
+.row .col {
+    background-color: rgb(220, 67, 20);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#section {
+    background-color: rgb(77, 127, 219);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#entrada div {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
