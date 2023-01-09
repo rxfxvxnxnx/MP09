@@ -1,0 +1,58 @@
+.outline {
+    outline: 5px solid rgb(47, 187, 47);
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination > a {
+    background-color: #f1f1f1;
+    width: 80px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    outline: 5px blue;
+    box-shadow: 10px 5px 5px rgb(156, 145, 145);
+}
+
+.pagination2 {
+    display: flex;
+}
+
+.pagination2 > a {
+    background-color: #f1f1f1;
+    width: 80px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    outline: 5px blue;
+    box-shadow: 10px 5px 5px rgb(156, 145, 145);
+    border-radius: 1000px;
+}
+
+a:hover {
+    background-color: rgb(199, 197, 197);
+}
+
+a:focus {
+    background-color: rgb(88, 221, 88);
+    color: white;
+}
+
+* {
+    cursor: url("happy.png"), auto !important;
+}
+
+::selection {
+    color: gold;
+}
