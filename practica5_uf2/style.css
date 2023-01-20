@@ -1,0 +1,10 @@
+.aumento{
+    padding-top: 200px;
+    text-align: center;
+}
+
+.aumento:hover{
+    font-size: 70px;
+    padding-top: 200px;
+    text-align: center;
+}
