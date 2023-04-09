@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Formulario jQuery</h1>
+        <form>
+        <div class="content">
+            <div class="step"><h1>First</h1>
+                <div>
+                    <form id="myForm">
+                        <label for="first">Nombre: </label>
+                        <input id=nombre type="text" name="first">
+                        <br>
+                        <label for="last">Apellido: </label>
+                        <input id=apellido type="text" name="last">
+                        <br>
+                        <label for="email">Email: </label>
+                        <input id=email type="text" name="email">
+                        <br>
+                        <label for="telefon">Telefon: </label>
+                        <input id=telefono type="telefon" name="telefon">
+                        <br>
+                    </form>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                
+                <div>
+                <a href="#" id="siguiente">Siguiente</a>
+                </div>
+            </div>
+            <div class="step hiddenStep">
+                <h1>Second</h1>
+                <div>
+                    <form id="myForm">
+                        <input type="checkbox" id="1" name="1" value="WIMAX 10">
+                    <label for="1">WIMAX 10</label><br>
+                    <input type="checkbox" id="2" name="2" value="WIMAX 20">
+                    <label for="2">WIMAX 20</label><br>
+                    <input type="checkbox" id="3" name="3" value="WIMAX 30">
+                    <label for="3">WIMAX 30</label><br>
+                    <input type="checkbox" id="4" name="4" value="WIMAX 60">
+                    <label for="4">WIMAX 60</label><br>
+                    <input type="radio" id="ip_dinamica" name="5" value="IP DinÃ mica">
+                    <label for="ip_dinamica">IP Dinámica</label><br>
+                    <input type="radio" id="ip_fixa" name="5" value="IP Fixa">
+                    <label for="ip_fixa">IP Fixa</label>
+                    </form>
+                </div>
+                
+                <div>
+                    <a href="#" id="atras">Atras</a>
+                    <a href="#" id="siguiente">Siguiente</a>
+                </div>
+            </div>
+            <div class="step hiddenStep">
+                <h1>Third</h1>
+                <div>
+                    <form id="myForm">
+                        <p>Comentari:</p><textarea id="comentario" rows="4" cols="50"></textarea>
+                    </form>
+                </div>
+                
+                <div>
+                    <a href="#" id="atras">Atras</a>
+                    <a href="#" id="siguiente">Siguiente</a>
+                </div>
+            </div>
+            <div class="step hiddenStep">
+                <h1>Resultat</h1>
+                <div>
+                    <form id="myForm">
+                    Nombre:&nbsp;<label id="opcion1"></label><br>
+                    Apellido:&nbsp;<label id="opcion2"></label><br>
+                    Email:&nbsp;<label id="opcion3"></label><br>
+                    Telefono:&nbsp;<label id="opcion4"></label><br>
+                    Comentario:&nbsp;<label id="opcion5"></label><br>
+                    Checkbox:&nbsp;<label id="opcion6"></label>&nbsp;&nbsp;<label id="opcion7"></label>&nbsp;&nbsp;<label id="opcion8"></label>&nbsp;&nbsp;<label id="opcion9"></label>
+                    <br>
+                    Radio:&nbsp;<label id="opcion10"></label><label id="opcion11"></label>
+                    </form>
+                </div>
+                <button type="button" class="btn" onclick="Enviar()">Enviar</button>
+                <div>
+                    <a href="#" id="atras">Atras</a>
+                </div>
+            </div>
+        </div>
+        </form>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.hiddenStep').css('display','none');
+        $('a#siguiente').click(function(event){
+            event.preventDefault();
+            var parent = $(this).closest('.step');
+            var mainContent = $('.content>.step');
+            var index = mainContent.index(parent)+1;
+            parent.css('display','none');
+            mainContent.eq(index).css('display','block');
+        })
+        
+    })
+    
+    
+    $(document).ready(function(){
+        $('.hiddenStep').css('display','none');
+        $('a#atras').click(function(event){
+            event.preventDefault();
+            var parent = $(this).closest('.step');
+            var mainContent = $('.content>.step');
+            var index = mainContent.index(parent)-1;
+            parent.css('display','none');
+            mainContent.eq(index).css('display','block');
+        })
+        
+    })
+
+    function Enviar() {
+            swal({
+                title: "Dades enviades correctament",
+                text: "Dades enviades correctament",
+                icon: "success",
+            })
+    }
+
+    $(function () {
+            $('#nombre').keyup(function () {
+                $('#opcion1').text($(this).val());
+            });
+            $('#apellido').keyup(function () {
+                $('#opcion2').text($(this).val());
+            });
+            $('#email').keyup(function () {
+                $('#opcion3').text($(this).val());
+            });
+            $('#telefono').keyup(function () {
+                $('#opcion4').text($(this).val());
+            });
+            $('#comentario').keyup(function () {
+                $('#opcion5').text($(this).val());
+            });
+            $('input:checkbox[name=1]').click(function () {
+                if('input:checkbox[name=1]:checked') {
+                    $('#opcion6').text($('input[name=1]:checked', '#myForm').val());
+                }
+            });
+            $('input:checkbox[name=2]').click(function () {
+                if('input:checkbox[name=2]:checked') {
+                    $('#opcion7').text($('input[name=2]:checked', '#myForm').val());
+                }
+            });
+            $('input:checkbox[name=3]').click(function () {
+                if('input:checkbox[name=3]:checked') {
+                    $('#opcion8').text($('input[name=3]:checked', '#myForm').val());
+                }
+            });
+            $('input:checkbox[name=4]').click(function () {
+                if('input:checkbox[name=4]:checked') {
+                    $('#opcion9').text($('input[name=4]:checked', '#myForm').val());
+                }
+            });
+            $('input:radio[name=5]').click(function () {
+                if('input:radio[name=5]:checked') {
+                    $('#opcion10').text($('input[name=5]:checked', '#myForm').val());
+                }
+            });
+        });
+    
+    //$('h1').first().css('display','none')
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+.uno {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    animation-name: uno;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    margin: auto;
+}
+@keyframes uno {
+    0%   {background-color: red;}
+    100% {background-color: blue; border-radius: 80px;}
+}
+
+.dos {
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    animation: dos 7s;
+    animation-iteration-count: infinite;
+    margin: auto;
+}
+@keyframes dos {
+    0%   {left:0px; top:0px;}
+    10%  {left:0px; top:300px;}
+    20%  {left:300px; top:300px;}
+    30%  {left:300px; top:0px;}
+    40% {left:0px; top:0px;}
+    50%  {left:300px; top:0px;}
+    60%  {left:300px; top:300px;}
+    70%  {left:0px; top:300px;}
+    80% {left:0px; top:0px;}
+}
+.dos_padding {
+    margin: 300px auto;
+}
+
+.tres1 {
+    width: 100px;
+    height: 70px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: tres 5s infinite;
+    animation-timing-function: linear;
+}
+.tres2 {
+    width: 100px;
+    height: 70px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: tres 5s infinite;
+    animation-timing-function: ease;
+}
+.tres3 {
+    width: 100px;
+    height: 70px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: tres 5s infinite;
+    animation-timing-function: ease-in;
+}
+.tres4 {
+    width: 100px;
+    height: 70px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: tres 5s infinite;
+    animation-timing-function: ease-out;
+}
+.tres5 {
+    width: 100px;
+    height: 70px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: tres 5s infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes tres {
+    0% {left: 0%;}
+    30% {left: 30%;}
+    40% {left: 60%;}
+    60% {left: 90%;}
+    80% {left: 0%;}
+}
+
+.redonda {
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 500px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.segundo {
+    background: linear-gradient(180deg, rgb(100, 88, 88)0%, rgb(77, 69, 69) 50%, rgba(255, 255, 255, 0) 50%);
+    height: 295px;
+    width: 2px;
+    position: absolute;
+    animation: infinite vuelta 60s linear;
+    color: gray;
+}
+
+.minuto {
+    background: linear-gradient(180deg, rgb(91, 167, 84)0%, rgb(91, 155, 75) 50%, rgba(255, 255, 255, 0) 50%);
+    height: 290px;
+    width: 4px;
+    position: absolute;
+    animation: infinite vuelta 3600s linear;
+}
+
+.hora {
+    background: linear-gradient(180deg, rgb(0, 0, 0)0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 50%);
+    height: 200px;
+    width: 7px;
+    position: absolute;
+    animation: infinite vuelta 86400s linear;
+}
+
+@keyframes vuelta {
+    0% {}
+    100% {transform: rotate(360deg);}
+}
+
+.fondo {
+    position: relative;
+    display:block;
+    background-image: url('vuGSfcs.jpeg') !important;
+    background-size: cover; 
+    min-width: 100%;
+}
+.avion img {
+    position: relative;
+    animation: avion 10s infinite linear;
+    width: 30px;
+}
+@keyframes avion {
+    0% {
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+    50% {
+        margin-left: 400px;
+        margin-top: 40px;
+        width: 60px;
+        transform: rotate(-10deg);
+    }
+    100% {
+        margin-left: 90%;
+        margin-top: 90px;
+        transform: rotate(20deg);
+    }
+}
+
+.marco {
+    position: relative;
+    animation: autobus 8s infinite;
+    width: 300px;
+}
+@keyframes autobus {
+    from { transform: translateX(0px); }
+    to { transform: translateX(100%); }
+}
+.rueda1 {
+    position: absolute;
+    z-index: 1;
+    animation: rodes 0.10s infinite;
+    margin-top: 60px;
+    width: 30px;
+    left: 220px;
+}
+.rueda2 {
+    position: absolute;
+    z-index: 1;
+    animation: rodes 0.10s infinite;
+    margin-top: 60px;
+    width: 30px;
+    left: 65px;
+}
+
+@keyframes rodes {
+    0% {transform: rotate(0deg); }
+    100% {transform: rotate(360deg); }
+}

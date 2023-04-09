@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="fabric.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Practica 2 NF2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body class="container">
+    <h1>Practica 2 NF2</h1>
+    <div>
+        <canvas id="canvas" width="1000" height="700" style="border: 2px solid white;"></canvas>
+    </div>
+    <br>
+    <div>
+        <h3>Botones:</h3>
+        <img class="clic" src="mesaRedonda.png" width="60" height="60" onclick="mesaRedonda()">
+        <img class="clic" src="mesaQuadrada.png" width="60" height="60" onclick="mesaQuadrada()">
+        <img class="clic" src="mesaRectangular.png" width="60" height="60" onclick="mesaRectangular()">
+        <img class="clic" src="silla.png" width="60" height="60" onclick="silla()">
+        <img class="clic" src="garbage.png" width="60" height="60" onclick="borrar()">
+    </div>
+    <br>
+    <script>
+        var canvas = new fabric.Canvas('canvas');  
+        function mesaRedonda() {
+            fabric.Image.fromURL('mesaRedonda.png', function(img) {
+                var img = img.scale(0.6);
+                canvas.add(new fabric.Group([img]))
+            }); 
+        }
+        function mesaQuadrada() {
+            fabric.Image.fromURL('mesaQuadrada.png', function(img) {
+                var img = img.scale(0.6);
+                canvas.add(new fabric.Group([img]))
+            }); 
+        }
+        function mesaRectangular() {
+            fabric.Image.fromURL('mesaRectangular.png', function(img) {
+                var img = img.scale(0.3);
+                canvas.add(new fabric.Group([img]))
+            }); 
+        }
+        function silla() {
+            fabric.Image.fromURL('silla.png', function(img) {
+                var img = img.scale(0.1);
+                canvas.add(new fabric.Group([img]))
+            });        
+        }
+        function borrar() {
+            canvas.remove(canvas.getActiveObject());
+        }
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
+</body>
+</html>
